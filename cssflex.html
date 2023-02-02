@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex练习</title>
+  </head>
+  <style>
+    .flex {
+      display: flex;
+    }
+    .baise {
+      background-color: white;
+    }
+
+    .gg {
+      border-radius: 20px;
+      margin: 5px 5px 5px 50px;
+    }
+    .jd {
+      border-radius: 20px;
+      margin: 5px;
+    }
+    p {
+      color: rgb(48, 47, 47);
+      font-size: 18px;
+    }
+    .shang {
+      flex: 1;
+      margin-top: 10%;
+      border-radius: 20px;
+    }
+    .xia {
+      flex: 1;
+      margin-top: 20px;
+    }
+    .daoHang {
+      color: rgb(104, 104, 104);
+    }
+    .yingyin {
+      box-shadow: 5px 5px 10pxrgb (74, 74, 74) #ccc;
+    }
+  </style>
+  <body
+    style="
+      margin: 0;
+      display: flex;
+      background-color: rgb(203, 203, 203);
+      height: 100vh;
+    "
+  >
+    <div
+      class="flex baise yingyin"
+      style="
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        border-right: 1px solid rgba(114, 114, 114, 0.483);
+      "
+    >
+      <!--侧边栏-->
+      <img
+        src="https://kangwenchang.com/logo.png"
+        style="width: 60px; height: 60px; margin: 5px"
+      />
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+      <p class="daoHang">导航内容</p>
+    </div>
+    <div class="flex baise" style="flex: 8; flex-direction: column">
+      <!--主体-->
+      <div class="flex baise yingyin" style="flex: 1; align-items: center">
+        <p style="margin-left: 100px; margin-right: 40px; opacity: 0.8">
+          康文昌html学习
+        </p>
+        <input
+          type="text"
+          name="fname"
+          style="
+            height: 36%;
+            width: 20%;
+            border-radius: 5px;
+            opacity: 0.6;
+            border: 1px solid rgb(54, 54, 54);
+          "
+          value="搜索  :"
+        />
+        <p style="margin-left: 20%">请登录</p>
+        <p style="margin-left: 20px">注册</p>
+        <p style="margin-left: 20px">我的订单</p>
+        <p style="margin-left: 20px">客服</p>
+        <!--头部栏-->
+      </div>
+      <div class="flex baise" style="flex: 10; flex-direction: row">
+        <!--身体栏-->
+        <div
+          class="flex"
+          style="
+            flex: 3;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            padding: 20px;
+          "
+        >
+          <!--内容栏-->
+          <div
+            class="flex baise gg"
+            style="
+              flex: 5;
+              flex-direction: column;
+              padding: 40px;
+              background: linear-gradient(
+                to left,
+                rgb(255, 255, 255),
+                rgb(0, 153, 255)
+              );
+              border: 1px solid rgba(0, 153, 255, 0.233);
+            "
+          >
+            <!--广告-->
+
+            <div
+              class="flex shang"
+              style="
+                background-color: rgb(255, 255, 255);
+                justify-content: space-between;
+              "
+            >
+              <p
+                style="
+                  font-size: 16px;
+                  line-height: 1.7;
+                  margin-left: 20px;
+                  opacity: 0.8;
+                "
+              >
+                目的地/酒店名称<br /><span style="font-weight: 700">上海</span>
+              </p>
+              <p style="font-size: 16px; line-height: 1.7; opacity: 0.8">
+                入住<br /><span style="font-weight: 700">2月2日</span>
+              </p>
+              <p
+                style="
+                  font-size: 16px;
+                  line-height: 1.7;
+                  margin-right: 20px;
+                  opacity: 0.8;
+                "
+              >
+                退房<br /><span style="font-weight: 700">2月3日</span>
+              </p>
+            </div>
+            <div class="flex xia">
+              <div
+                class="flex"
+                style="
+                  flex: 3;
+                  border-radius: 10px;
+                  background-color: rgb(255, 255, 255);
+                "
+              >
+                <p style="margin-left: 20px; font-size: 16px; opacity: 0.8">
+                  房间/住客<br /><span style="font-weight: 700">1间1位</span>
+                </p>
+                <p style="margin-left: 20%; font-size: 16px; opacity: 0.8">
+                  酒店级别<br /><span style="font-weight: 700">不限</span>
+                </p>
+              </div>
+              <div
+                class="flex"
+                style="
+                  flex: 1;
+                  border-radius: 10px;
+                  margin-left: 20px;
+                  background-color: rgb(0, 153, 255);
+                "
+              >
+                <p style="font-size: 20px; color: aliceblue; margin: auto">
+                  Q 搜索
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex baise gg"
+            style="
+              flex: 2;
+              background: linear-gradient(to left, red, rgb(0, 140, 255));
+              margin-top: 10px;
+            "
+          >
+            <!--轮播图-->
+          </div>
+          <div class="flex baise gg" style="flex: 1; text-align: center">
+            <p
+              style="
+                margin-left: 10px;
+                font-size: 20px;
+                color: rgb(104, 104, 104); ;
+              "
+            >
+              酒店<span style="color: rgb(255, 140, 0)">推荐</span>
+            </p>
+            <!--文字-->
+          </div>
+          <div class="flex baise gg" style="flex: 5">
+            <!--具体内容-->
+            <div
+              class="flex jd"
+              style="
+                flex: 1;
+                background: linear-gradient(rgb(130, 2, 2), rgb(0, 140, 255));
+              "
+            ></div>
+            <div
+              class="flex jd"
+              style="
+                flex: 1;
+                background: linear-gradient(rgb(130, 2, 2), rgb(0, 140, 255));
+              "
+            ></div>
+            <div
+              class="flex jd"
+              style="
+                flex: 1;
+                background: linear-gradient(rgb(130, 2, 2), rgb(0, 140, 255));
+              "
+            ></div>
+          </div>
+        </div>
+        <div
+          class="flex"
+          style="
+            flex: 2;
+
+            flex-direction: column;
+            padding: 20px;
+          "
+        >
+          <!--推荐栏-->
+          <div
+            class="flex baise"
+            style="
+              flex: 7;
+              border-radius: 20px;
+              background: linear-gradient(
+                rgb(3, 255, 129),
+                rgb(0, 247, 255),
+                rgb(255, 255, 255)
+              );
+            "
+          ></div>
+          <div class="flex" style="flex: 1"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
